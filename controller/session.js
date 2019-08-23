@@ -12,6 +12,7 @@ class SessionController extends BaseController {
    * check session
    */
   index(req, res) {
+    console.log('333333',req.session);
     res.reply(req.session.user ? [req.session.user] : []);
   }
 

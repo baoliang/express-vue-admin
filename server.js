@@ -17,6 +17,7 @@ const expressListRoutes = util.expressListRoutes;
 const baseRouter = require('./route/base');
 const adminRouter = require('./route/admin');
 const baseMiddleware = require('./middleware/base');
+const resouceRouter = require('./route/resouce');
 
 // 数据库
 const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
@@ -70,6 +71,8 @@ app.use(baseMiddleware.reply);
 
 // 路由
 app.use(apiPath + '/', baseRouter);
+app.use(apiPath + '/rest', resouceRouter);
+
 app.use(apiPath + '/admin', adminRouter);
 
 // 打印路由

@@ -14,6 +14,7 @@ router.use(authMiddleware.role('admin'));
 
 util.restRoute('/users', router, userController);
 util.restRoute('/roles', router, roleController);
+
 util.restRoute('/permissions', router, permissionController);
 
 util.buildRoute([

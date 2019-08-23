@@ -17,6 +17,8 @@
       <Menu-item name="admin:user" v-if="permissions['admin:user']">{{permissions['admin:user'].menuName}}</Menu-item>
       <Menu-item name="admin:role" v-if="permissions['admin:role']">{{permissions['admin:role'].menuName}}</Menu-item>
       <Menu-item name="admin:permission" v-if="permissions['admin:permission']">{{permissions['admin:permission'].menuName}}</Menu-item>
+      <Menu-item name="admin:wholesale" v-if="permissions['admin:wholesale']">{{permissions['admin:wholesale'].menuName}}</Menu-item>
+
     </Submenu>
   </Menu>
 </template>
