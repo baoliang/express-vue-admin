@@ -33,12 +33,12 @@ module.exports = {
         testUser = user;
         return AdminRole.create({
           name: 'admin',
-          comment: '管理员'
+          comment: 'admin'
         }).then((role) => {
           adminRole = role;
           return AdminRole.create({
             name: 'member',
-            comment: '普通用户'
+            comment: 'normal'
           });
         }).then((role) => {
           memberRole = role;
@@ -54,19 +54,19 @@ module.exports = {
           },
           {
             name: 'admin',
-            comment: '后台管理'
+            comment: 'admin'
           },
           {
-            name: 'admin:user',
-            comment: '后台管理:用户'
+            name: 'adminuser',
+            comment: 'adminuser'
           },
           {
-            name: 'admin:role',
-            comment: '后台管理:角色'
+            name: 'adminrole',
+            comment: 'adminrole'
           },
           {
-            name: 'admin:permission',
-            comment: '后台管理:权限'
+            name: 'adminpermission',
+            comment: 'adminauth'
           }
         ], (data) => {
           return AdminPermission.create(data);
