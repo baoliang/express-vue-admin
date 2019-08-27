@@ -13,7 +13,7 @@ Vue.use(Vuex);
 Vue.use(VueResource);
 Vue.use(iView);
 Vue.config.productionTip = false;
-Vue.http.options.root = 'http://localhost:3000/api/v1';
+Vue.http.options.root = 'https://api.avhair.com/api/v1';
 Vue.http.interceptors.push(function (request, next) {
   request.credentials = true; // 允许发送cookie
   next(function (response) {
