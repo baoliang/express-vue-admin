@@ -14,10 +14,10 @@
         <Icon type="settings"></Icon>
         {{permissions['admin'].menuName}}
       </template>
-      <Menu-item name="admin:user" v-if="permissions['admin:user']">{{permissions['admin:user'].menuName}}</Menu-item>
-      <Menu-item name="admin:role" v-if="permissions['admin:role']">{{permissions['admin:role'].menuName}}</Menu-item>
-      <Menu-item name="admin:permission" v-if="permissions['admin:permission']">{{permissions['admin:permission'].menuName}}</Menu-item>
-      <Menu-item name="admin:wholesale" v-if="permissions['admin:wholesale']">{{permissions['admin:wholesale'].menuName}}</Menu-item>
+      <Menu-item name="adminuser" v-if="permissions['adminuser']">{{permissions['adminuser'].menuName}}</Menu-item>
+      <Menu-item name="adminrole" v-if="permissions['adminrole']">{{permissions['adminrole'].menuName}}</Menu-item>
+      <Menu-item name="adminpermission" v-if="permissions['adminpermission']">{{permissions['adminpermission'].menuName}}</Menu-item>
+      <Menu-item name="adminwholesale" v-if="permissions['adminwholesale']">{{permissions['adminwholesale'].menuName}}</Menu-item>
 
     </Submenu>
   </Menu>

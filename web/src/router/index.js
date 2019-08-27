@@ -15,19 +15,19 @@ export default new Router({
       component: Dashboard
     },
     {
-      path: '/admin/user',
+      path: '/adminuser',
       component: AdminUser
     },
     {
-      path: '/admin/role',
+      path: '/adminrole',
       component: AdminRole
     },
     {
-      path: '/admin/permission',
+      path: '/adminpermission',
       component: AdminPermission
     },
     {
-      path: '/admin/wholesale',
+      path: '/adminwholesale',
       component: Wholesale,
     }
   ]
